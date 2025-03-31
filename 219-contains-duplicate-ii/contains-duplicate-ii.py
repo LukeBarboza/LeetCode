@@ -10,10 +10,8 @@ class Solution:
             if current_value:
                 if current_value[0] == nums[i] and abs(i - current_value[1]) <= k:
                     return True
-                seen[str(nums[i])] = [nums[i], i]
-
-            else:
-                seen[str(nums[i])] = [nums[i], i]
+            
+            seen[str(nums[i])] = [nums[i], i]
 
 
         return False
